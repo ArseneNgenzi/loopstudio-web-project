@@ -13,22 +13,18 @@ body {
   font-size: 15px;
   font-family: 'Josefin Sans', sans-serif;
   font-family: 'Alata', sans-serif;
-  /* line-height: 1; */
 }
 
 .container {
   background-image: url(./images/desktop/image-hero.jpg);
-  /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: 50% -2%;
-  /* height: 100%; */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 header {
   grid-column: 2 / 12;
   padding: 2rem 0rem 0 0rem;
-  /* border: 1px solid var(--White); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,8 +42,6 @@ header {
 .hero-text {
   border: 2px solid var(--White);
   padding: 1.5rem;
-  /* letter-spacing: 0.1em; */
-  /* background-color: aquamarine; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -60,27 +54,17 @@ header {
   font-family: 'Josefin Sans', sans-serif;
   line-height: 1.5em;
   letter-spacing: 0.1em;
-  /* letter-spacing: 0.5rem; */
 }
 .interactive {
   grid-column: 2 / 12;
-  /* background-color: var(--White); */
-  /* padding: 2rem; */
-  /* padding-top: 2rem; */
   margin-top: 10em;
-  /* border: 2px solid red; */
 }
 .interactive-img {
-  /* background-color: #ffffff; */
-  /* z-index: 10; */
+
   background-image: url(./images/desktop/image-interactive.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* width: 100%; */
   height: 15em;
-  /* margin-top: 3rem; */
-  /* grid-column: 2/12; */
-  /* margin: 2em; */
 }
 .interactive-text {
   margin-top: 2rem;
@@ -101,17 +85,13 @@ header {
   line-height: 1.8em;
 }
 .our-creations {
-  /* border: 1px solid var(--Black); */
   grid-column: 2 / 12;
-  /* background-color: var(--White); */
-  /* padding: 2rem; */
   margin-top: 2rem;
 }
 .our-creations-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid green; */
   margin-bottom: 3rem;
 }
 .our-creations-text p {
@@ -122,8 +102,6 @@ header {
   line-height: 1.3em;
   text-align: center;
   letter-spacing: 0.1em;
-  /* margin-bottom: 1rem; */
-  /* border: 1px solid red; */
 }
 .big-see-all-btn {
   display: none;
@@ -172,7 +150,6 @@ header {
   background-color: var(--Black);
 }
 .footer-logo-nav {
-  /* border: 1px solid aquamarine; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,7 +162,6 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* border: 1px solid var(--White); */
 }
 .footer-logo-nav nav a {
   color: var(--White);
@@ -198,11 +174,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-top: 1.5rem; */
 }
 .socials {
-  /* border: 1px  solid aquamarine; */
-  /* width: auto; */
   display: flex;
   justify-content: space-around;
   padding: 2rem;
@@ -212,7 +185,6 @@ header {
   margin: 0 1rem;
 }
 .copyright {
-  /* border: 1px solid var(--White); */
   width: 100%;
 }
 .copyright p {
@@ -225,9 +197,7 @@ header {
 .our-creations {
   margin-bottom: 4em;
 }
-.our-creation-images {
-  /* margin-top: 1rem; */
-}
+
 .image p {
   text-transform: uppercase;
   /* border: 1px solid white; */
@@ -239,7 +209,6 @@ header {
   padding: 1rem;
 }
 .see-all-btn-small-screen {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,13 +228,11 @@ header {
   color: var(--White);
 }
 
-/* BEFORE MEDIUM SCREENS */
+/* SCREENS OF 550px AND ABOVE */
 
 @media only screen and (min-width: 550px) {
   .hero {
     grid-column: 2 /10;
-    /* padding: 5rem 2rem 8rem 2rem; */
-    /* background-color: #000; */
   }
   .our-creation-images {
     display: flex;
@@ -279,7 +246,7 @@ header {
   }
 }
 
-/* MEDIUM SCREENS  */
+/* SCREENS OF 768px AND ABOVE */
 
 @media only screen and (min-width: 768px) {
   .container {
@@ -289,7 +256,6 @@ header {
   header {
     grid-column: 2 / 12;
     padding: 2rem 0rem 2rem 0rem;
-    /* border: 1px solid orange; */
   }
   .small-menu {
     display: none;
@@ -327,7 +293,6 @@ header {
     grid-column: 2 / 12;
     padding: 0;
     margin-top: 2rem;
-    /* margin-bottom: 10rem; */
   }
 
   .image {
@@ -347,7 +312,6 @@ header {
     width: auto;
     justify-content: space-around;
     padding: 0.5rem 1.5rem;
-    /* background-color: #696969; */
   }
   .socials img {
     margin: 0.5rem;
@@ -357,13 +321,9 @@ header {
 }
 
 @media only screen and (min-width: 1024px) {
-  /* 1. REDUCE HERO-TEXT MARGIN WIDTH */
-  /* 2. CUT THE PICTURES DIV INTO 4 PARTS */
 
   .hero {
     grid-column: 2 / 8;
-    /* padding: 3rem 0rem 0rem 0rem; */
-    /* margin-bottom: 10rem; */
   }
   .hero-text {
     padding: 0.5rem;
@@ -375,16 +335,12 @@ header {
       position: relative;
   }
   .interactive-img{
-      /* margin-top: 6rem; */
       width: 60%;
-      /* border: 1px solid red; */
       height: 22rem;
   }
   .interactive-text {
       width: 60%;
-      /* border: 1px solid green; */
       padding-bottom: 0;
-      /* z-index: 10; */
       position: absolute;
       right: 0;
       bottom: 0;
@@ -398,12 +354,9 @@ header {
   .interactive-text .body-text {
     text-align: left;
   }
-  .our-creation-images {
-    /* background-color: green; */
-  }
+
   .image {
     flex: 24%;
-    /* max-width: 30%; */
     margin: 0.5%;
     height: 20rem;
   }
@@ -427,8 +380,6 @@ header {
   border: 0;
   border: 2px SOLID var(--Black);
   cursor: pointer;
-  /* margin-right: 0.3rem; */
-  /* outline: none; */
 }
 .big-see-all-btn:hover {
   background-color: var(--Black);
@@ -437,13 +388,9 @@ header {
 .footer {
   flex-direction: row;
   justify-content: space-between;
-  /* grid-column: 2 / 12; */
-  /* padding:  3rem; */
 }
 .footer-logo-nav {
-  /* justify-content: flex-start; */
   align-items: flex-start;
-  /* grid-column: 2 / 12; */
   padding-left: 5rem;
 }
 .footer-socials-copyright {
@@ -453,11 +400,8 @@ header {
   margin-left: 1rem;
 }
 .footer-socials-copyright {
-    /* display: flex; */
-    /* flex-direction: column; */
     justify-content: space-between;
     align-items: flex-end;
-    /* margin-top: 1.5rem; */
 }
 .socials {
   justify-content: space-between;
@@ -471,6 +415,9 @@ header {
   padding: 1rem;
 }
 }
+
+/* SCREENS OF 1100px AND ABOVE */
+
 @media only screen and (min-width: 1100px) {
   .hero {
     grid-column: 2 / 7;
@@ -480,21 +427,28 @@ header {
     padding-right: 0.5%;
   }
 }
+
+
+/* SCREENS OF 1170px AND ABOVE */
+
 @media only screen and (min-width: 1170px) {
-  /* .hero {
-    grid-column: 2 / 7;
-  } */
+
   .footer {
     padding-left: 1%;
     padding-right: 1%;
   }
 }
+
+/* SCREENS OF 1230px AND ABOVE */
+
 @media only screen and (min-width: 1230px){
   .footer {
     padding-left: 1.5%;
     padding-right: 1.5%;
   }
 }
+
+/* SCREENS OF 1350px AND ABOVE */
 @media only screen and (min-width: 1350px){
   .footer {
     padding-left: 2%;
